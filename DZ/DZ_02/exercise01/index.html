@@ -1,0 +1,59 @@
+<!-- Дополнить форму в примере кода 2 из урока полями (input'ами):
+ввода цвета
+диапазона значений Сделать поля Имени, мейла и пароля обязательными для заполнения. 
+(это моменты для самостоятельного изучения, на уроке не рассматривались) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>виды полей ввода</title>
+</head>
+<body>
+    <h1>Регистрация нового пользователя</h1>
+    <form action="">
+        <label for="name-input" > введите имя</label><br>
+        <input type="text" id="name input" placeholder="введите свое имя" name="name" required><br>
+        <label for="email-input" >введите свой email</label><br>
+        <input type="email" id="email-input" name="email" placeholder="введите свой email" required><br>
+        <label for="password-input"> введите пароль</label><br>
+        <input type="password" id="password-input" name="password" placeholder="введите пароль" required><br>
+        <label for=""></label><br>
+        <input type="date" id="date-input" name="date-birth"><br>
+    
+        <label for="tel-input">номер телефона:</label><br>
+        <input type="tel" id="tel-input" name="tel"><br><br>
+
+        <fieldset>
+            <input type="checkbox" id="newsletter" name="newsletter-input" checked >
+            <label for="newsletter" style="color: brown;">получить информацию о скидках</label>
+        </fieldset><br>
+
+        <label for="colorPicker">Выберите цвет:</label>
+        <input type="color" id="colorPicker" name="colorPicker">
+
+        <p style="background-color: greenyellow;">выберите ваш пол</p>
+        <label for="man">мужчина</label>
+        <input type="radio" id="man" name="gender" value="man">
+        <label for="woman">женщина</label>
+        <input type="radio" id="woman" name="gender" value="woman">
+        <label for="child">ребенок</label>
+        <input type="radio" id="child" name="gender" value="ребенок">
+
+        <label for="age-input">выберите ваш возраст</label>
+        <select name="age" id="age-input">
+            <option value="15-25">15-25</option>
+            <option value="25-45">25-45</option>
+            <option value="100" disabled>45-105</option>
+        </select>
+            <br><br>
+        <label for="file-input"></label>
+        <input id="file-input" type="file" name="file">
+
+        <button type="submit">отправить</button>
+        <button type="reset">очистить</button>
+    </form>
+
+    
+</body>
+</html>

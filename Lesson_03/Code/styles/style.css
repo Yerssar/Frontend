@@ -1,0 +1,27 @@
+
+        + {
+            color: red;
+        }
+          #header2{
+            color: green;
+        }
+        h1 {
+            color: red; 
+            font-size: 30px;
+        }
+
+        .headers{
+            color:blue;
+        }
+        .container .paraq {
+            color:green;
+        } 
+
+        div { 
+            background-color: darkgrey;
+        }
+
+        .header4{
+            font-size: 36px;
+        }
+

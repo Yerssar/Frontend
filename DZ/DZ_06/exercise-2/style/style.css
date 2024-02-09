@@ -23,7 +23,8 @@
 .text {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex-direction: row;
+    /* flex: 1; */
 }
 .section, .article {
     flex: 1;

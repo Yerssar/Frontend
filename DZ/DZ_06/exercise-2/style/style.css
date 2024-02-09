@@ -1,0 +1,36 @@
+.page-container{
+    margin: 5px;
+    padding: 100px;
+    display: flex;
+    border: 1px solid rgb(99, 98, 96);
+    flex-direction: column;
+    background-color: beige;
+    align-items: center;
+    /* height: 100%; */
+}
+.header, .nav, .text, .aside, .footer {
+    padding: 10px;
+    border: 1px solid black;
+    margin: 5px;
+}
+.header, .footer {
+    background-color: lightblue;
+    height: 100%;
+}
+.nav, .aside {
+    background-color: lightgreen;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.section, .article {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* TODO - надо сместить aside в право от section,article */
+

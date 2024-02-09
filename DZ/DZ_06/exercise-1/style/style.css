@@ -1,0 +1,35 @@
+/* 
+Высота блоков - 300px. По ширине они должны помещаться ровно на ширину экрана
+Цвета: Блок 1 - red, Блок 2 - green, Блок 3 - blue, Блок 4 - yellow, Блок 5 - black
+Классы блоков должны быть block_red, block_green, block_blue, block_yellow, block_black соответственно 
+*/
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .block {
+    height: 300px;
+    flex: 1;
+  }
+  
+  .block_red {
+    background-color: red;
+  }
+  
+  .block_green {
+    background-color: green;
+  }
+  
+  .block_blue {
+    background-color: blue;
+  }
+  
+  .block_yellow {
+    background-color: yellow;
+  }
+  
+  .block_black {
+    background-color: black;

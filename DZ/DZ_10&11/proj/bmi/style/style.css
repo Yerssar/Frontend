@@ -1,0 +1,65 @@
+body {
+    font-family: DejaVu Sans Mono, monospace; /*https://www.w3.org/Style/Examples/007/fonts.ru.html*/
+    margin: 0;
+    padding: 0;
+    background-color: rgb(102, 80, 80);
+  }
+  
+  .title {
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 50px;
+    background-color: #9c9797;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 19px 12px 30px 11px #a81515; /* https://webcode.tools/css-generator/box-shadow#google_vignette */
+  }
+  
+  #bmi-form {
+    max-width: 300px;
+    margin: 50;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: aliceblue;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: aqua;
+    color: black;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 320px;
+  }
+  
+  button {
+    font-size: 1rem;
+    box-shadow: 0px 0px 20px aqua;
+    background-color: aqua;
+  }
+  
+  button:hover {
+    box-shadow: 0px 0px 50px aqua;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: rgb( 42,147,153);
+  }
+  

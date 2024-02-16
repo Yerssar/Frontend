@@ -95,5 +95,5 @@ function getPrimesInRange(n) {
     }
     return primes;
 }
-const n = 20;
+const n = 17;
 console.log(`Простые числа в промежутке от 1 до ${n}:`, getPrimesInRange(n));

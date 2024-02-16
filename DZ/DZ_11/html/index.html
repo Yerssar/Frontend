@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИМТ калькулятор</title>
+    <link rel="stylesheet" href="/style/style.css"> 
+</head>
+<body>
+    <!-- //создаем div куда ложим все -->
+    <div class="container"> 
+        <h1>ИМТ калькулятор</h1> 
+        <!-- // создае form id="bmi-form" для обращения JS кода к HTML коду -->
+        <form id="bmi-form"> <!-- Форма для ввода данных по ней я буду обращаться в JS коде-->
+            <div class="form-group">
+                <label for="height">Рост(см):</label> <!--название ввод роста-->
+                <input type="number" id="height" name="height" required placeholder="введите ваш рост в см."> <!-- ввод -->
+            </div>
+            <div class="form-group">
+                <label for="weight">Вес(кг):</label> 
+                <input type="number" id="weight" name="weight" required placeholder="введите ваш вес в кг."> 
+            </div>
+            <button type="submit">Рассчитать</button> <!-- кнопка -->
+        </form>
+        <!-- создаем еще одн div результатов -->
+        <div id="result" class="result"> 
+            <p>Ваш ИМТ: <span id="bmi-value"></span></p> <!-- результат с JS -->
+            <p id="bmi-result"></p> <!-- результат с JS -->
+        </div>
+    </div>
+    <script src="/js_code/index.js" defer></script> <!-- подключаю JS код -->
+</body>
+</html>

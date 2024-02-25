@@ -1,0 +1,44 @@
+.main-container {
+    height: 100vh;
+    background-color: bisque;
+    display: grid;
+    grid-template-rows: 200px 100px 1fr 1fr 200px; /*kakie budut stroki*/
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "section aside"
+    "article aside"
+    "footer footer"
+    ;
+}
+
+header{
+    background-color: aquamarine;
+    grid-area: header;
+}
+
+nav{
+    background-color: lightgreen;
+    grid-area: nav;
+}
+
+.main-content{
+    background-color: blanchedalmond;
+
+}
+
+.grid-section{
+    grid-area: section;
+}
+.grid-article{
+    grid-area: article;
+}
+.grid-aside{
+    grid-area: aside;
+}
+
+footer{
+    background-color: blueviolet;
+    grid-area: footer;
+}

@@ -1,0 +1,67 @@
+/* В домашке где мы делали горизонтальный navbar c помощью flexbox - 
+переделать на grid. */
+.page-container{
+    margin: 5px;
+    padding: 100px;
+    display: flex;
+    border: 1px solid rgb(99, 98, 96);
+    flex-direction: column;
+    background-color: beige;
+    align-items: center;
+    /* height: 100%; */
+}.page-container {
+    display: grid;
+    grid-template-areas:
+        'header'
+        'nav'
+        'text'
+        'footer';
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr;
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    background-color: lightblue;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: lightgreen;
+}
+
+.text {
+    grid-area: text;
+    display: grid;
+    grid-template-areas:
+        'child-1 aside';
+    grid-template-columns: 2fr 1fr;
+}
+
+.child-1 {
+    grid-area: child-1;
+    background-color: lightcoral;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: lightgrey;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: lightsalmon;
+}
+
+/* Additional styling */
+.page-container {
+    padding: 10px;
+}
+
+.text {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
